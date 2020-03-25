@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./usercard.css";
 
 class UserCard extends Component {
   state = {
@@ -9,8 +10,9 @@ class UserCard extends Component {
       let response = await fetch("https://randomuser.me/api/?results=1");
       let data = await response.json();
       console.log("data is ", data);
+
       this.setState({
-        userData: data.value
+        userData: data.results.firstname
       });
     } catch (error) {
       this.setState({
@@ -21,9 +23,9 @@ class UserCard extends Component {
   render() {
     let { userData } = this.state;
     return (
-      <div>
+      <div className="card">
         <p>Welcome unwilling test subject</p>
-        <p> {userData}</p>
+        <p> `{userData}`</p>
       </div>
     );
   }
