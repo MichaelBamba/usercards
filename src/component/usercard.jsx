@@ -12,8 +12,8 @@ class UserCard extends Component {
   };
   async componentDidMount() {
     try {
-      const response = await fetch(`https://randomuser.me/api/?results=1`);
-      const data = await response.json();
+      let response = await fetch(`https://randomuser.me/api/?results=1`);
+      let data = await response.json();
       this.setState({
         title: data.results[0].name.t,
         first_Name: data.results[0].name.f,
@@ -28,12 +28,12 @@ class UserCard extends Component {
     }
   }
   render() {
-    const { title } = this.state;
-    const { first_Name } = this.state;
-    const { last_Name } = this.state;
-    const { pic } = this.state;
-    const { email } = this.state;
-    const { phone } = this.state;
+    let { title } = this.state;
+    let { first_Name } = this.state;
+    let { last_Name } = this.state;
+    let { pic } = this.state;
+    let { email } = this.state;
+    let { phone } = this.state;
     return (
       <div>
         <div>
