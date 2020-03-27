@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import "./propcardd.css";
 
 const PropCard = props => {
-  const { subject } = props;
+  const { subjectData } = props;
   return (
     <div>
       <img
-        src={subject.picture.large}
-        alt={`${subject.name.first} ${subject.name.last}`}
+        src={subjectData.picture}
+        alt={`${subjectData.name.first} ${subjectData.name.last}`}
       />
       <p>
-        {subject.name.first} {subject.name.last}
+        {subjectData.name.first} {subjectData.name.last}
       </p>
     </div>
   );
