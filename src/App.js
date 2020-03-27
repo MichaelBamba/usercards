@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import PropCard from "./component/propcard";
+
 import PropCardList from "./component/propcardlist";
+import "../node_modules/bulma/css/bulma.css";
+
 import "./App.css";
 class App extends Component {
   state = {
@@ -34,8 +36,10 @@ class App extends Component {
     const { title, subjectData } = this.state;
     return (
       <div className="App">
-        <h1>{title}</h1>
-        <button onClick={this.handleClick}>Load New People</button>
+        <h1 classeName="title">{title}</h1>
+        <button className="button" onClick={this.handleClick}>
+          Load New Test Subjects
+        </button>
         <PropCardList subjectData={subjectData} />
       </div>
     );

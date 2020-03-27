@@ -1,14 +1,30 @@
 .App {
-  text-align: center;
+  font-size: 16px;
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+img {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: Red;
+  border-radius: 2px;
   color: white;
+  height: 50%;
+  width: 100%;
+}
+.button {
+  align-items: top;
+  height: 30px;
+}
+
+.title {
+  align-items: center;
+  color: green;
 }
