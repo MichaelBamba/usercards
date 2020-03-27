@@ -2,23 +2,29 @@
   font-size: 16px;
   justify-content: center;
   display: block;
-  flex-wrap: wrap;
-  align-items: center;
-}
 
+  align-items: flex-start;
+}
+.PropCardList {
+  flex-wrap: wrap;
+
+  align-items: row;
+}
 img {
   width: auto;
   height: auto;
   border-radius: 50%;
 }
 
+img:hover {
+}
 .card {
   align-items: center;
   background-color: Red;
-  border-radius: 2px;
+  border-radius: 10px;
+  border-color: aquamarine;
   color: white;
-  height: 50%;
-  width: 50%;
+  width: min-content;
 }
 button {
   align-items: center;
