@@ -1,5 +1,6 @@
 .App {
   font-size: 16px;
+  justify-content: center;
   display: block;
   flex-wrap: wrap;
   align-items: center;
@@ -17,14 +18,25 @@ img {
   border-radius: 2px;
   color: white;
   height: 50%;
-  width: 100%;
+  width: 50%;
 }
-.button {
-  align-items: top;
+button {
+  align-items: center;
   height: 30px;
+  border-color: aquamarine;
+  border-width: 3px;
+  flex-direction: column;
 }
 
-.title {
+title {
   align-items: center;
   color: green;
+}
+h1 {
+  font-size: 100px;
+}
+
+img {
+  height: 50%;
+  width: 50%;
 }

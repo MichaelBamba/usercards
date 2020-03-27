@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
 import PropCardList from "./component/propcardlist";
-import "../node_modules/bulma/css/bulma.css";
 
+import "bulma/css/bulma.css";
 import "./App.css";
+
 class App extends Component {
   state = {
     subjectData: [],
-    title: "Unwilling Test Subject"
+    title: " D-Class Personel"
   };
 
   subjectData = async () => {
